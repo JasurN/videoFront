@@ -30,7 +30,6 @@ class RecordsList extends Component {
     render() {
         const recordsList = this.identifyUserTypeAndGetRecord();
         const {user_type} = this.props;
-        console.log(user_type);
         return (
             <Table celled>
                 <Table.Header>

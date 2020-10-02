@@ -33,7 +33,6 @@ class AllDepartmentUsers extends Component {
         let department = localStorage.getItem('department')
         await getUsersList()
             .then(usersLists => {
-                console.log(usersLists)
                 let prevDepartment = '';
                 let usersListWithCards = (<div />);
                 if (usersLists.length > 0) {
