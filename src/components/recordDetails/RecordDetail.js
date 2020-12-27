@@ -117,7 +117,7 @@ class RecordDetail extends Component {
                                             <Table.Cell record_detail_id={record_detail_item.id}>
                                                 {user_info ? (user_info.userType.id !== 1 && selectedRecord.owner === user.id && (
                                                         <div>
-                                                            {record_detail_item.status === "Не начато" ?
+                                                            {record_detail_item.status === "Не записана" ?
                                                                 buttonPlayAndSendVideo
                                                                 :
                                                                 <div/>
