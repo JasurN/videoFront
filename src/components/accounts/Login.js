@@ -39,10 +39,12 @@ class Login extends Component {
             <div className="col-md-4 m-auto">
                 <div className="card card-body mt-2">
 
-                    <h2 className="text-center">Войти в аккаунт</h2>
+                    <h2 className="text-center">Login into account</h2>
+                    <p className="text-center"><strong>Department head hint: </strong><br/>benjon : 123123123 </p>
+                    <p className="text-center"><strong>User hint: </strong><br/>tomr : 123123123</p>
                     <form onSubmit={this.onSubmit}>
                         <div className="form-group">
-                            <label>Имя*</label>
+                            <label>Username*</label>
                             <input
                                 type="text"
                                 className="form-control"
@@ -51,18 +53,9 @@ class Login extends Component {
                                 value={firstName}
                             />
                         </div>
+
                         <div className="form-group">
-                            <label>Фамилия*</label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                name="lastName"
-                                onChange={this.onChange}
-                                value={lastName}
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label>Пароль*</label>
+                            <label>Password*</label>
                             <input
                                 type="password"
                                 className="form-control"
@@ -75,7 +68,7 @@ class Login extends Component {
                         <div className="form-group">
                             <div className="text-center">
                                 <button type="submit" className="btn btn-primary">
-                                    Логин
+                                    Login
                                 </button>
                             </div>
                         </div>
